@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - THE KNOT WEAVER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-indigo-500 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">THE KNOT WEAVER</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="products.html" class="hover:text-indigo-300 transition duration-300">Products</a></li>
+                    <li><a href="about.html" class="hover:text-indigo-300 transition duration-300">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-300 transition duration-300">Contact</a></li>
+                    <li><a href="faq.html" class="hover:text-indigo-300 transition duration-300">FAQ</a></li>
+                    <li><a href="shipping.html" class="hover:text-indigo-300 transition duration-300">Shipping & Returns</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul class="space-y-4">
+                    <li><a href="products.html" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Products</a></li>
+                    <li><a href="about.html" class="block text-lg text-white hover:text-indigo-300 transition duration-300">About Us</a></li>
+                    <li><a href="contact.html" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Contact</a></li>
+                    <li><a href="faq.html" class="block text-lg text-white hover:text-indigo-300 transition duration-300">FAQ</a></li>
+                    <li><a href="shipping.html" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Shipping & Returns</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="about" class="bg-indigo-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-indigo-800 text-center mb-8">About Us</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="About Us" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700">
+                        <p class="text-lg">Welcome to Paracord Pro, your source for high-quality, handcrafted paracord bracelets. We are a passionate team dedicated to creating durable and stylish accessories for everyday wear. Our bracelets are made with premium paracord, ensuring they are not only fashionable but also functional and reliable. Each piece is carefully crafted with attention to detail, reflecting our commitment to quality and customer satisfaction.</p>
+                        <p class="text-lg mt-4">Founded in [Year], our mission is to provide unique and personalized bracelets that suit your individual style. Whether you're an outdoor enthusiast, a fashion-conscious individual, or simply looking for a meaningful accessory, we have something for you. Thank you for supporting our small business!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-8">Our Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="text-indigo-500 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Quality</h3>
+                        <p class="text-gray-600">We use only the highest quality materials and maintain strict quality control standards.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="text-indigo-500 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Craftsmanship</h3>
+                        <p class="text-gray-600">Each bracelet is handcrafted with care and attention to detail by our skilled artisans.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="text-indigo-500 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Sustainability</h3>
+                        <p class="text-gray-600">We are committed to sustainable practices and minimizing our environmental impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Paracord Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        closeMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && 
+                !mobileMenu.contains(event.target) && 
+                event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+    </script>
+</body>
+</html> 
